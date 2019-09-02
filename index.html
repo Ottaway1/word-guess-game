@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Word Guess Game</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+  <meta charset="UTF-8">
+  <title>Word Guess Game</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">
-    <script src="assets/game.js"></script>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/game.js"></script>
 </head>
+
 <body>
-    <!-- nav -->
-    <nav class="navbar navbar-light bg-light">
-         <div class="fancy">
-        <span class="navbar-brand mb-0 h1"><strong>Foods Of The World Guessing Game</strong></span>
+  <!-- nav -->
+  <nav class="navbar navbar-light bg-light">
+    <div class="fancy">
+      <span class="navbar-brand mb-0 h1"><strong>Foods Of The World Guessing Game</strong></span>
     </div>
-        <button type="button" class="btn btn-danger">
-                    Correct Guesses <span class="badge badge-light">4</span>
-                  </button>
-          </nav>
-   
-    <br>
-    
- <!--main game-->
-<div class="main-game">
- <div class="jumbotron">
-                <h1 class="display-4"></h1>
-                <p class="lead">Press any letter to begin guessing the type of food</p>
-              <!-- correct letters -->
-                <div class="card">
-                        <div class="card-body">
-                          Correct letters
-                        </div>
-                      </div>
-                      
-                <hr class="my-4">
-                <!-- incorect letters-->
-                <div class="card">
-                        <div class="card-body">
-                          Incorrect letters
-                        </div>
-                      </div>
-                      
-              </div>
-              </div>
+    <button type="button" class="btn btn-danger">
+      Correct Guesses <span class="badge badge-light">4</span>
+    </button>
+  </nav>
+
+  <br>
+
+  <!--main game-->
+  <div class="main-game">
+    <div class="jumbotron">
+      <h1 class="display-4"></h1>
+      <p class="lead">Press any letter to begin guessing the type of food</p>
+      <!-- correct letters -->
+      <div class="card">
+        <div class="card-body">
+          <div id="correct">
+            Correct letters
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-4">
+      <!-- incorect letters-->
+      <div class="card">
+        <div class="card-body">
+          Incorrect letters
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 
 
