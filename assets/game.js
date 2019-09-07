@@ -10,6 +10,7 @@ var computerSelection = choices[Math.floor(Math.random() * choices.length)];
 console.log(computerSelection);
 // user keys in letter for guesses if correct display if not correct display in box //
 var answerStr = "";
+var wrong = "";
 
 for (var i = 0; i < computerSelection.length; i++) {
     answerStr += "_  ";
@@ -39,6 +40,7 @@ document.onkeyup = function () {
         else {
             if ('-' == answer.charAt(i)){
             answerTp+= "-";
+            wrong += userguess;
             }
             else {
                 answerTp+= answer.charAt(i);
@@ -49,6 +51,7 @@ document.onkeyup = function () {
     }
     answer = answerTp;
     document.getElementById("correct").innerHTML = answer;
+    document.getElementById("wrong").innerHTML = wrong;
     console.log("answer; "+answer);
 } //end of function
 
